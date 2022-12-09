@@ -1,0 +1,21 @@
+-   What is Neural Network ?
+
+relu function -> rectified linear unit 
+we can use many features to find the cost of house 
+for instance size, bedrooms, zipcode, wealth, family size, quality ===> price 
+x = features
+y = price 
+- family size -> size, bedrooms 
+- walkability -> zipcode
+- school quality -> zipcode, wealth 
+all these three equal to the price
+
+- Supervized learning with Neural Network
+input x -> input y -> real state , home features -> price 
+input x -> input y -> online advertising
+there are two types of data structured data -> data in terms of string and numbers, unstructured data -> in terms of picture, audio
+
+- why is deep learning take off ?
+
+labeled data -> with (x,y)
+compotunational power and better algorithm are there presently

@@ -1,0 +1,51 @@
+- Binary classfification
+you have an input where you want to find out yes or no in terms of 0 or 1
+(x,y) is a training example 
+m = mtrain
+mtest = mtest 
+x = (n - > rows) and (m -> columns)
+x.shape = (n,m)  
+
+- logistic regression 
+ sigmoid function = 1 / 1 + e^-z
+if z is very large then it will close to 1, else close to zero 
+we must select parameters w and b so that y-hat becomes a good estimate of the chances of Y being equal to one.
+
+
+-  logistic regression cost function
+y = sigmoid(wtx + b), where sigmoid(z) = 1 /1+e^-z
+in logistic regression we do not usually use the mean square error 
+- loss(error) function:
+l(yhat -y) = 1/2(yhat - y)^2 
+- logistic function error functioin:
+l(yhat, y) = -(ylog * yhat + (1-y)log(1-yhat))
+loss function is based on a single training example
+
+- costfunction(
+    we can then apply the previous cost function on all the training set
+    1/m L(y^(i) - y(i))
+   (1/m) (-(y(i)log * yhat(i) + (1-y(i))log(1-yhat(i))))
+) 
+- Gradient Descent
+we want to find w and b that makes the J(w,b) the minimum, until it converges
+repeat {
+    w = w -  alpha * dJ(w,b)/dw
+    b= b -  alpha * dJ(w,b)/dw
+    alpha is the learning rate
+}
+
+- Derivatives
+
+it is the slope, height/ width
+7-5/2-1 =2
+x^2 = 2
+2(5) = slope = 10
+2(3) = slope = 6
+
+-logistic regression gradient decent :
+ z= w * x + b
+ y^ = a = sigmoid(z)
+ L(a,y) = -(ylog(a) + (1-y)log(1-a))
+
+
+- Vectorization
